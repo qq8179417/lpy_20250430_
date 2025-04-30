@@ -51,7 +51,7 @@ jobs:
           echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
 
       - name: 判断是否需要更新
-        id: check_update  
+        id: check_update
         run: |
           echo -e "\033[34m[判断是否需要更新]\033[0m"
           if [ "$LOCAL_VERSION" = "$TAG_NAME" ]; then
